@@ -2,11 +2,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.header {
+.header a {
   text-decoration: none;
   color: black;
   
-  a:hover {
+  :hover {
       color: red;
   }
 }
