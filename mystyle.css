@@ -20,21 +20,31 @@ h3 {
 .column {
   float: left;
 }
+@media only screen and (max-width: 600px) {
+  .left-top, .left-bottom {
+    width: 100%;
+  }
 
-.left-top {
-  width: 70%;
+  .right-top, .right-bottom{
+    width: 0%;
+  }
 }
+@media only screen and (min-width: 601px) {
+  .left-top {
+    width: 70%;
+  }
 
-.right-top {
-  width: 30%;
-}
+  .right-top {
+    width: 30%;
+  }
 
-.left-bottom {
-  width: 75%;
-}
+  .left-bottom {
+    width: 75%;
+  }
 
-.right-bottom {
-  width: 25%;
+  .right-bottom {
+    width: 25%;
+  }
 }
 
 /* Clear floats after the columns */
