@@ -20,3 +20,15 @@ h3 {
 .first-p {
   margin-top: 10px;
 }
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
