@@ -26,9 +26,9 @@ h3 {
 }
 
 .col-left {
-  width: 75%;
+  flex: 75%;
 }
 
 .col-right {
-  width: 25%;
+  flex: 25%;
 }
