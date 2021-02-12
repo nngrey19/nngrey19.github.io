@@ -1,3 +1,7 @@
+.body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .container { 
     padding-left: 16px;
     padding-right: 16px;
