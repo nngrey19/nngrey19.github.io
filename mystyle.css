@@ -22,7 +22,7 @@ h3 {
 }
 
 .column {
-  float: left;
+  disply: flex;
 }
 
 .left {
