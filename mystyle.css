@@ -25,10 +25,10 @@ h3 {
   display: flex;
 }
 
-.left {
+.col-left {
   width: 75%;
 }
 
-.right {
+.col-right {
   width: 25%;
 }
