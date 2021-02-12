@@ -10,4 +10,9 @@ body {
 ul {
   padding: 0;
   list-style-type: none;
+  margin-top: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
 }
