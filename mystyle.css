@@ -21,11 +21,19 @@ h3 {
   float: left;
 }
 
-.left {
+.left-top {
+  width: 70%;
+}
+
+.right-top {
+  width: 30%;
+}
+
+.left-bottom {
   width: 75%;
 }
 
-.right {
+.right-bottom {
   width: 25%;
 }
 
