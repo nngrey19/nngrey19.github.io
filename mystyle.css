@@ -68,6 +68,10 @@ figcaption {
   padding-bottom: 6px;
 }
 
+.mb12 {
+  margin-bottom: 12px;
+}
+
 .note {
   font-size: smaller;
 }
