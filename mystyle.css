@@ -16,9 +16,17 @@ body {
   padding-right: 16px;
 }
 
-img {
+.main {
    padding:1px;
    border:1px solid #021a40;
+   width: 250px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 ul {
