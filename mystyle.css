@@ -2,14 +2,12 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.header {
-  a { 
-    text-decoration: none;
-    color: black;
-  }
+.header a {
+  text-decoration: none;
+  color: black;
 
-  a:hover {
-      color: red;
+  :hover {
+    color: red;
   }
 }
 
