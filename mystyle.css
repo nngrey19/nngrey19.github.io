@@ -56,6 +56,10 @@ figcaption {
   }
 }
 
+.books ul li {
+  list-style-type: disc;
+}
+
 .books .book-list {
   padding-left: 16px;
 }
