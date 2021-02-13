@@ -35,6 +35,10 @@ body {
   width: 50%;
 }
 
+figcaption {
+  font-size: smaller;
+}
+
 ul {
   list-style-type: none;
   margin-top: 10px;
