@@ -42,11 +42,11 @@ h3 {
 
 @media only screen and (min-width: 601px) {
   .left-top {
-    width: 70%;
+    width: 60%;
   }
 
   .right-top {
-    width: 30%;
+    width: 40%;
   }
 
   .left-bottom {
