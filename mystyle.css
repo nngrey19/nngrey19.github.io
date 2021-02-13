@@ -57,10 +57,10 @@ h3 {
 }
 
 .title {
-  font-size: x-large;
+  font-size: 1.4em;
 }
 .date {
-  font-size: medium;
+  font-size: small;
 }
 
 hr {
