@@ -60,13 +60,14 @@ figcaption {
   list-style-type: disc;
 }
 
+ul li .no-bull {
+list-style-type: none; 
+}
+
 .books .book-list {
   padding-left: 16px;
 }
 
-.no-bull {
-  list-style-type: none; 
-}
 
 .right-bottom ul {
   margin-left: 6px;
