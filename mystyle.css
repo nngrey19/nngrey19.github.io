@@ -49,9 +49,7 @@ main ul {
 }
 
 .no-bull {
-  li:first-child {
-     list-style-type: none; 
-  }
+  list-style-type: none; 
 }
 
 .right-bottom ul {
