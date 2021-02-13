@@ -5,10 +5,10 @@ body {
 .header a {
   text-decoration: none;
   color: black;
+}
 
-  :hover {
-    color: red;
-  }
+.header a:hover {
+  color: red;
 }
 
 .container { 
