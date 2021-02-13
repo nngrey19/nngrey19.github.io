@@ -56,7 +56,7 @@ figcaption {
   list-style-type: disc;
 }
 
-ul li .no-bull {
+li .no-bull {
 list-style-type: none; 
 }
 
