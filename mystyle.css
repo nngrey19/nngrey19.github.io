@@ -37,6 +37,7 @@ body {
 
 figcaption {
   font-size: smaller;
+  padding-top: 4px;
   text-align: center;
 }
 
