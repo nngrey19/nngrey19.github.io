@@ -52,6 +52,10 @@ figcaption {
   padding-left: 0;
 }
 
+.book-list {
+  padding-left: 16px;
+}
+
 .no-bull {
   list-style-type: none; 
 }
