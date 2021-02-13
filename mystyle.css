@@ -72,6 +72,10 @@ figcaption {
   margin-bottom: 12px;
 }
 
+.mt12 {
+  margin-bottom: 12px;
+}
+
 .note {
   font-size: smaller;
 }
