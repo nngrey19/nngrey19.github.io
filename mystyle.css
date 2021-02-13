@@ -64,6 +64,10 @@ figcaption {
   padding-left: 16px;
 }
 
+.pb6 {
+  padding-bottom: 6px;
+}
+
 .note {
   margin-top: 8px;
   font-size: smaller;
