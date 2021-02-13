@@ -48,6 +48,10 @@ ul {
   padding: 0;
 }
 
+.right-bottom ul {
+  margin-left: 8px;
+}
+
 h3 {
   margin-bottom: 10px;
 }
