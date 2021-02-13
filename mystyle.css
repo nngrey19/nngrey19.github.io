@@ -48,6 +48,12 @@ main ul {
   padding: 0;
 }
 
+.no-bull {
+  li:first-child {
+     list-style-type: none; 
+  }
+}
+
 .right-bottom ul {
   margin-left: 6px;
 }
