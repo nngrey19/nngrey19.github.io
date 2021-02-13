@@ -64,6 +64,10 @@ figcaption {
   padding-left: 16px;
 }
 
+.note {
+  margin-top: 8px;
+  font-size: smaller;
+}
 
 .right-bottom ul {
   margin-left: 6px;
