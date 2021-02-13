@@ -43,6 +43,7 @@ figcaption {
 
 ul {
   list-style-type: none;
+  margin-left: 4px;
   margin-top: 10px;
   padding: 0;
 }
