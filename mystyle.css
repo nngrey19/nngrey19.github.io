@@ -22,6 +22,10 @@ body {
    width: 250px;
 }
 
+.main-image {
+  padding-top: 44px;
+}
+
 .center {
   display: block;
   margin-left: auto;
