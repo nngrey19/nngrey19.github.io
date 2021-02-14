@@ -175,13 +175,13 @@ hr {
     width: 100%;
   }
 
-  .column .right-top {
+.right-top {
     display: none;
   }
   
-  .review-body {
+  /* .review-body {
     width: 90%;
-  }
+  } */
 }
 
 .reading {
