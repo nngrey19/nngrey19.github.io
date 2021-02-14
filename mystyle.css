@@ -116,7 +116,7 @@ hr {
     width: 100%;
   }
 
-  .right-top, .right-bottom, .middle-top {
+  .right-top, .right-bottom {
     display: none;
   }
 }
@@ -130,14 +130,6 @@ hr {
     width: 40%;
   }
   
-  .books .right-top {
-    width: 30%;
-  }
-  
-  .middle-top {
-    width: 10%;
-  }
-
   .left-bottom {
     width: 70%;
   }
