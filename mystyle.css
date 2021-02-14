@@ -123,7 +123,7 @@ hr {
 
 @media only screen and (min-width: 601px) {
   .left-top {
-    width: 60%;
+    width: 55%;
   }
   
   .books .left-top {
@@ -131,7 +131,7 @@ hr {
   }
 
   .right-top {
-    width: 40%;
+    width: 45%;
   }
   
   .books .right-top {
