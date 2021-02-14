@@ -88,6 +88,10 @@ figcaption {
   margin-left: 6px;
 }
 
+.nav-link {
+  font-size: x-small;
+}
+
 h3 {
   margin-bottom: 10px;
 }
