@@ -127,7 +127,7 @@ hr {
   }
   
   .books .left-top {
-    width: 70%;
+    width: 65%;
   }
 
   .right-top {
@@ -135,7 +135,7 @@ hr {
   }
   
   .books .right-top {
-    width: 30%;
+    width: 35%;
   }
   
   .left-bottom {
@@ -148,7 +148,7 @@ hr {
 }
 
 .review-body {
-  width: 80%;
+  width: 85%;
 }
 
 /* Clear floats after the columns */
