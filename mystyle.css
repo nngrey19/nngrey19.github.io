@@ -3,9 +3,13 @@ body {
   /* font-family: 'Open Sans', sans-serif; */
 }
 
-p li {
+p {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
+}
+
+body li {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header a {
