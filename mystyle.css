@@ -175,7 +175,7 @@ hr {
     width: 100%;
   }
 
-  .column .right-top, .right-bottom {
+  .column .right-top {
     display: none;
   }
   
