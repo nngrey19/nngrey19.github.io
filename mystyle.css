@@ -164,7 +164,7 @@ hr {
   }
   
   .books .left-bottom {
-    width: 50%;
+    width: 55%;
   }
 
   .right-bottom {
@@ -172,12 +172,12 @@ hr {
   }
   
   .books .right-bottom {
-    width: 50%;
+    width: 45%;
   }
 }
 
 .review-body {
-  width: 85%;
+  width: 80%;
 }
 
 .reading {
