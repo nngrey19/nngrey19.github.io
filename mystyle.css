@@ -131,6 +131,10 @@ hr {
   }
 
   .right-top {
+    width: 40%;
+  }
+  
+  .books .right-top {
     width: 30%;
   }
   
