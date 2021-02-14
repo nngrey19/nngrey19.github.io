@@ -8,6 +8,10 @@ p {
   line-height: 1.6;
 }
 
+.serif {
+  font-family: 'Merriweather', serif;
+}
+
 body li {
   font-family: 'Open Sans', sans-serif;
 }
@@ -70,6 +74,10 @@ figcaption {
 
 .books .book-list {
   padding-left: 20px;
+}
+
+.pt5 {
+  padding-top: 5px;
 }
 
 .pb6 {
