@@ -151,6 +151,10 @@ hr {
   width: 85%;
 }
 
+.reading {
+  padding-top: 50px;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
