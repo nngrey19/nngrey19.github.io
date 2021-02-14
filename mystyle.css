@@ -22,10 +22,9 @@ figure {
 }
 
 figure img {
-    padding: 1px;
-    border: 1px solid #021a40;
-    width: 300px;
-  }
+  padding: 1px;
+  border: 1px solid #021a40;
+}
 
 .center {
   display: block;
