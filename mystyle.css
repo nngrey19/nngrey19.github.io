@@ -141,9 +141,17 @@ hr {
   .left-bottom {
     width: 70%;
   }
+  
+  .books .left-bottom {
+    width: 65%;
+  }
 
   .right-bottom {
     width: 30%;
+  }
+  
+  .books .right-bottom {
+    width: 35%;
   }
 }
 
