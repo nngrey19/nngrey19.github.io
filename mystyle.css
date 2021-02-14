@@ -136,11 +136,19 @@ hr {
   .right-top, .right-bottom {
     display: none;
   }
+  
+  .review-body {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 601px) {
   .stuff {
     display: none;
+  }
+  
+  .review-body {
+    width: 80%;
   }
 
   .left-top {
@@ -174,10 +182,6 @@ hr {
   .books .right-bottom {
     width: 45%;
   }
-}
-
-.review-body {
-  width: 80%;
 }
 
 .reading {
