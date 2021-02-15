@@ -3,8 +3,8 @@ body {
   /* font-family: 'Open Sans', sans-serif; */
 }
 
-.font35 {
-  font-size: 35px;
+.font38 {
+  font-size: 38px;
 }
 
 p {
@@ -90,6 +90,10 @@ figcaption {
 
 .pb6 {
   padding-bottom: 6px;
+}
+
+.pl8 {
+  padding-left: 8px;
 }
 
 .mb6 {
