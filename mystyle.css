@@ -8,6 +8,10 @@ p {
   line-height: 1.6;
 }
 
+.gray {
+  color: gray;
+}
+
 .serif {
   font-family: 'Merriweather', serif;
 }
@@ -100,8 +104,8 @@ figcaption {
   margin-bottom: 40px;
 }
 
-.mt8 {
-  margin-top: 8px;
+.mt6 {
+  margin-top: 6px;
 }
 
 .mt12 {
