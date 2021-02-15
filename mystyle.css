@@ -1,163 +1,17 @@
-body {
-    font-family: 'Merriweather', serif;
-  /* font-family: 'Open Sans', sans-serif; */
-}
-
-.font38 {
-  font-size: 38px;
-}
-
-p {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-}
-
-.gray {
-  color: gray;
-}
-
-.serif {
-  font-family: 'Merriweather', serif;
-}
-
-body li {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.container a {
-  text-decoration: none;
-  color: black;
-}
-
-.container a:hover {
-  color: purple;
-}
-
 .container { 
   padding-left: 40px;
   padding-right: 16px;
 }
 
-figure {
-  padding-top: 36px;
-  padding-bottom: 24px;
-}
-
-figure img {
-  padding: 1px;
-  border: 1px solid #021a40;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-figcaption {
-  font-size: smaller;
-  padding-top: 4px;
-  text-align: center;
-}
-
-.main ul {
-  list-style-type: none;
-  margin-left: 4px;
-  margin-top: 10px;
-  padding: 0;
-}
-
-.books ul {
-  padding-left: 18px;
-}
-
-.books ul li {
-  list-style-type: disc;
-}
-
-.books .no-bull {
-  list-style-type: none; 
-}
-
-.books .book-list {
-  padding-left: 20px;
-}
-
-.pt5 {
-  padding-top: 5px;
-}
-
-.pt98 {
-  padding-top: 98px;
-}
-
-.pb6 {
-  padding-bottom: 6px;
-}
-
-.pl4 {
-  padding-left: 4px;
-}
-
-.mb2 {
- margin-bottom: 2px;
-}
-
-.mb6 {
- margin-bottom: 6px;
-}
-
-.mb8 {
- margin-bottom: 8px;
-}
-
-.mb12 {
-  margin-bottom: 12px;
-}
-
-.mb46 {
-  margin-bottom: 46px;
-}
-
-.mt6 {
-  margin-top: 6px;
-}
-
-.mt12 {
-  margin-top: 12px;
-}
-
-.note {
-  font-size: smaller;
-}
-
-.right-bottom ul {
-  margin-left: 6px;
-}
-
-.nav-link {
-  font-size: x-small;
-}
-
-h3 {
-  margin-bottom: 10px;
-}
-
-.title {
-  font-size: 1.4em;
-}
-.date {
-  font-size: x-small;
-}
-
-hr {
-  border-top: 1px solid #E0E0E030;
-  color: #E0E0E070;
-}
-
 .column {
   float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media only screen and (min-width: 601px) {
@@ -211,22 +65,182 @@ hr {
     padding-left: 16px;
   }
 
-.right-top {
+  /* .right-top {
     display: none;
-  }
+  } */
   
   .review-body {
     width: 90%;
   }
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/* padding */
+
+.pb6 {
+  padding-bottom: 6px;
+}
+
+.pl4 {
+  padding-left: 4px;
+}
+
+.books .book-list {
+  padding-left: 20px;
+}
+
+.pt5 {
+  padding-top: 5px;
+}
+
+.pt98 {
+  padding-top: 98px;
 }
 
 .content {
   padding-right: 30px;
+}
+
+/* margins */
+
+.mb2 {
+ margin-bottom: 2px;
+}
+
+.mb6 {
+ margin-bottom: 6px;
+}
+
+.mb8 {
+ margin-bottom: 8px;
+}
+
+.mb12 {
+  margin-bottom: 12px;
+}
+
+.mb38 {
+  margin-bottom: 38px;
+}
+
+.mt6 {
+  margin-top: 6px;
+}
+
+.mt12 {
+  margin-top: 12px;
+}
+
+.right-bottom ul {
+  margin-left: 6px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+/* font */
+
+body {
+    font-family: 'Merriweather', serif;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+body li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font38 {
+  font-size: 38px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.gray {
+  color: gray;
+}
+
+.serif {
+  font-family: 'Merriweather', serif;
+}
+
+.note {
+  font-size: smaller;
+}
+
+.nav-link {
+  font-size: x-small;
+}
+
+.title {
+  font-size: 1.4em;
+}
+.date {
+  font-size: x-small;
+}
+
+/* links */
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
+
+.container a:hover {
+  color: purple;
+}
+
+/* images */
+
+figure {
+  padding-top: 36px;
+  padding-bottom: 24px;
+}
+
+figure img {
+  padding: 1px;
+  border: 1px solid #021a40;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+figcaption {
+  font-size: smaller;
+  padding-top: 4px;
+  text-align: center;
+}
+
+/* lists */
+
+.main ul {
+  list-style-type: none;
+  margin-left: 4px;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.books ul {
+  padding-left: 18px;
+}
+
+.books ul li {
+  list-style-type: disc;
+}
+
+.books .no-bull {
+  list-style-type: none; 
+}
+
+/* hr */
+
+hr {
+  border-top: 1px solid #E0E0E030;
+  color: #E0E0E070;
 }
