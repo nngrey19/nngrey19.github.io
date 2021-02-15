@@ -88,6 +88,10 @@ figcaption {
   padding-top: 5px;
 }
 
+.pt98 {
+  padding-top: 98px;
+}
+
 .pb6 {
   padding-bottom: 6px;
 }
@@ -214,10 +218,6 @@ hr {
   .review-body {
     width: 90%;
   }
-}
-
-.reading {
-  padding-top: 76px;
 }
 
 /* Clear floats after the columns */
