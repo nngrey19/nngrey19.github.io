@@ -3,6 +3,10 @@ body {
   /* font-family: 'Open Sans', sans-serif; */
 }
 
+.font35 {
+  font-size: 35px;
+}
+
 p {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
