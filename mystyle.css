@@ -24,12 +24,12 @@ body li {
   font-family: 'Open Sans', sans-serif;
 }
 
-.header a {
+.container a {
   text-decoration: none;
   color: black;
 }
 
-.header a:hover {
+.container a:hover {
   color: purple;
 }
 
