@@ -9,7 +9,7 @@ $(document).ready(function(){
         console.log("*************")
         console.log(data);
         $('#met-image').attr('src', data["primaryImageSmall"]);
-        $('#met-link').attr('href', data["linkResource"]);
+        $('#met-link').attr('href', data["objectURL"]);
         $('#caption').text(data["title"]);
       });
     });
