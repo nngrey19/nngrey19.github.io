@@ -22,7 +22,7 @@ $(document).ready(function(){
     $('#met-image').attr('src', img);
   }
   
-  var updateLinkAndCaption(title, url) {
+  var updateLinkAndCaption = function(title, url) {
     $('#caption').text(title);
     $('#met-link').attr('href', url);
   }
