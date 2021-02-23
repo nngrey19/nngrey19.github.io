@@ -10,17 +10,20 @@ $(document).ready(function(){
     });
       
     $.get( `https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`, function( data ) {
-      updateLink(data["primaryImageSmall"]).done(updateLinkAndCaption(data["title"], data["objectURL"]));
+      var img = data["primaryImageSmall"];
+      var title = data["title"];
+      var url = data["objectURL"];
+      updateImage(img).done(updateLinkAndCaption(title, url));
     });
     
-    var updateLink = function(img) {
+    var updateImage = function(img) {
       $('#met-image').attr('src', img);
     };
     
     var updateLinkAndCaption(title, url) {
-      $('#caption').hide().text(title).show('slow');
+      $('#caption').text(title);
       $('#met-link').attr('href', url);
-    }
+    };
 
   });
   
