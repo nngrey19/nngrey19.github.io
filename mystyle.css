@@ -293,7 +293,7 @@ hr {
   font-size: 20px;
   letter-spacing: 4px;
   position: relative;
-  background-color: #16a085;
+  background-color: gray;
   border: none;
   color: #fff;
   padding: 20px;
@@ -301,8 +301,8 @@ hr {
   text-align: center;
   transition-duration: 0.4s;
   overflow: hidden;
-  box-shadow: 0 5px 15px #193047;
-  border-radius: 4px;
+  /* box-shadow: 0 5px 15px #193047; */
+  /* border-radius: 4px; */
 }
 
 .button:hover {
