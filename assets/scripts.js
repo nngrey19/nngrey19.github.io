@@ -8,24 +8,13 @@ $(document).ready(function(){
       
       $.get( `https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`, function( data ) {
         var img = data["primaryImageSmall"];
+        var title = data["title"];
+        var url = data["objectURL"];
         
-        $('#met-image').attr('src', img).done(function() {
-          var title = data["title"];
-          var url = data["objectURL"];
-          
-          $('#caption').text(title);
-          $('#met-link').attr('href', url);
-        });
+        $('#met-image').attr('src', img);
+        $('#caption').text(title);
+        $('#met-link').attr('href', url);
       });
     });
   });
 }); 
-
-// var updateImage = function(img) {
-//   $('#met-image').attr('src', img);
-// };
-// 
-// var updateLinkAndCaption = function(title, url) {
-//   $('#caption').text(title);
-//   $('#met-link').attr('href', url);
-// };
