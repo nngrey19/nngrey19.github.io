@@ -9,6 +9,7 @@ $(document).ready(function(){
       $.get( `https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`, function( data ) {
         console.log("*************")
         console.log(data["accessionYear"]);
+        $('#met-image').attr('src', data["primaryImageSmall"]);
       });
     });
   });
