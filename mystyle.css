@@ -272,3 +272,10 @@ hr {
   opacity: 0;
   transition: all 0.8s
 }
+
+.example_a:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
