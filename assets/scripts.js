@@ -7,7 +7,7 @@ $(document).ready(function(){
       console.log(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`);
       $.get( `https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`, function( data ) {
         console.log("*************")
-        console.log(data["objectID"]);
+        console.log(data);
         $('#met-image').attr('src', data["primaryImageSmall"]);
         $('#met-link').attr('href', data["linkResource"]);
         $('#caption').text(data["title"]);
