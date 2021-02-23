@@ -1,4 +1,13 @@
 $(document).ready(function(){
+  
+  var updateImage = function(img) {
+    $('#met-image').attr('src', img);
+  };
+  
+  var updateLinkAndCaption = function(title, url) {
+    $('#caption').text(title);
+    $('#met-link').attr('href', url);
+  };
 
   $( "#new-pic" ).click(function() {
     
@@ -11,15 +20,6 @@ $(document).ready(function(){
         var title = data["title"];
         var url = data["objectURL"];
         updateImage(img).done(updateLinkAndCaption(title, url));
-        
-        var updateImage = function(img) {
-          $('#met-image').attr('src', img);
-        };
-        
-        var updateLinkAndCaption = function(title, url) {
-          $('#caption').text(title);
-          $('#met-link').attr('href', url);
-        };
       });
     });
     
