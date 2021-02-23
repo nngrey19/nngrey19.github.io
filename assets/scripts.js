@@ -6,9 +6,10 @@ $(document).ready(function(){
       console.log(ids.length);
       var id = ids[Math.floor(Math.random() * ids.length)];
       https://collectionapi.metmuseum.org/public/collection/v1/objects/[objectID]
+      console.log(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`);
       $.get( `https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`, function( data ) {
         console.log("*************")
-        console.log(data["accessionYear"]);
+        console.log(data["objectID"]);
         $('#met-image').attr('src', data["primaryImageSmall"]);
       });
     });
