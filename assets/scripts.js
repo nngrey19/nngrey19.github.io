@@ -7,7 +7,7 @@ $(document).ready(function(){
       $.get( `https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`, function( data ) {
         $('#met-image').attr('src', data["primaryImageSmall"]);
         $('#met-link').attr('href', data["objectURL"]);
-        $('#caption').hide().text(data["title"]).show();
+        $('#caption').hide().text(data["title"]).show('slow');
       });
     });
   });
