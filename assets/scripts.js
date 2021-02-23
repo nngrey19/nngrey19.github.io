@@ -16,12 +16,12 @@ $(document).ready(function(){
     
     var updateImage = function(img) {
       $('#met-image').attr('src', img);
-    }
+    };
     
     var updateLinkAndCaption = function(title, url) {
       $('#caption').text(title);
       $('#met-link').attr('href', url);
-    }
+    };
     
   });
   
