@@ -16,15 +16,15 @@ $(document).ready(function(){
       updateImage(img).done(updateLinkAndCaption(title, url));
     });
     
-    var updateImage = function(img) {
-      $('#met-image').attr('src', img);
-    };
-    
-    var updateLinkAndCaption(title, url) {
-      $('#caption').text(title);
-      $('#met-link').attr('href', url);
-    };
-
   });
+  
+  var updateImage = function(img) {
+    $('#met-image').attr('src', img);
+  }
+  
+  var updateLinkAndCaption(title, url) {
+    $('#caption').text(title);
+    $('#met-link').attr('href', url);
+  }
   
 }); 
