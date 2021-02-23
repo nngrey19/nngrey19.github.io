@@ -266,9 +266,9 @@ hr {
   transition: all 0.4s ease 0s;
 }
 
-.example_a:hover {
+/* .example_a:hover {
   color: #ffffff !important;
   background: #f6b93b;
   border-color: #f6b93b !important;
   transition: all 0.4s ease 0s;
-}
+} */
