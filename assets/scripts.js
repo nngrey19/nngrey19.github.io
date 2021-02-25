@@ -11,7 +11,7 @@ $(document).ready(function(){
         var url = data["objectURL"];
         
         $('#met-image').attr('src', img);
-        $('#caption').text(data["title"]);
+        $('#title').text(data["title"]);
         $('#artist').text(data["artistDisplayName"]);
         $('#date').text(data["objectDate"]);
         $('#met-link').attr('href', url);
