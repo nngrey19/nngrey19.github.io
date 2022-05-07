@@ -11,9 +11,9 @@ $(document).ready(function(){
         newId = newId.toString()
         console.log(newId)
         $(".active").removeClass("active");
-        $("#" + newId).addClass("active");
+        $("a#" + newId).addClass("active");
         $(".posts").hide();
-        $("div#" + newId.toString()).show();
+        $("div#" + newId).show();
       }
     } else if(e.target.id === "right") {
       if (currentId < 2) {
@@ -21,10 +21,10 @@ $(document).ready(function(){
         newId = newId.toString()
         console.log(newId)
         $(".active").removeClass("active");
-        $("#" + newId).addClass("active");
+        $("a#" + newId).addClass("active");
         $(".posts").hide();
         console.log("newId", newId)
-        $("div#" + newId.toString()).show();
+        $("div#" + newId).show();
       }
     } else {
       $(".active").removeClass("active");
