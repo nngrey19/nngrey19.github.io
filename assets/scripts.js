@@ -13,7 +13,7 @@ $(document).ready(function(){
         console.log("newId", typeof(newId))
         console.log("one")
         // $(".active").removeClass("active");
-        $("no" + newId).addClass("active");
+        $("#no" + newId).addClass("active");
         $(".posts").hide();
         $("div#" + newId).show();
       }
@@ -22,7 +22,7 @@ $(document).ready(function(){
         var newId = currentId + 1;
         newId = newId.toString()
         // $(".active").removeClass("active");
-        $("no" + newId).addClass("active");
+        $("#no" + newId).addClass("active");
         $(".posts").hide();
         console.log("two")
         console.log("newId", newId)
