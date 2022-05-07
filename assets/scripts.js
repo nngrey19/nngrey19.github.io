@@ -20,6 +20,21 @@ $(document).ready(function(){
     $(".posts").hide();
     $("div#group" + newId).show();
   });
+  
+  $(window).on('load', function() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var page = urlParams.get('page'));
+    $(".active").removeClass("active");
+    $(".posts").hide(); 
+    
+    if(page==="2") {
+      $("#no2").addClass("active");
+      $("div#group2").show();
+    } else {
+      $("#no1").addClass("active");
+      $("div#group1").show();
+    }
+  });
 
   // $("#new-pic").click(function() {
   // 
