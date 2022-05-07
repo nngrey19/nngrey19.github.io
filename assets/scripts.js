@@ -32,7 +32,7 @@ $(document).ready(function(){
     if(page==="2") {
       $("#no2").addClass("active");
       $("div#group2").show();
-    } else {
+    } else if(page==="1") {
       $("#no1").addClass("active");
       $("div#group1").show();
     }
