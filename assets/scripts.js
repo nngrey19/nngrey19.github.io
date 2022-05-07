@@ -9,9 +9,9 @@ $(document).ready(function(){
       if(currentId > 1) {
         var newId = currentId - 1
         newId = newId.toString()
-        console.log(newId)
+        console.log("newId", newId)
         $(".active").removeClass("active");
-        $(`a#${newId}`).addClass("active");
+        $(newId).addClass("active");
         $(".posts").hide();
         $("div#" + newId).show();
       }
@@ -21,7 +21,7 @@ $(document).ready(function(){
         newId = newId.toString()
         console.log(newId)
         $(".active").removeClass("active");
-        $("a#" + newId).addClass("active");
+        $(newId).addClass("active");
         $(".posts").hide();
         console.log("newId", newId)
         $("div#" + newId).show();
