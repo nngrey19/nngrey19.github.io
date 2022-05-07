@@ -21,8 +21,8 @@ $(document).ready(function(){
     $("div#group" + newId).show();
   });
   
-  $(".p2").click(function(e) {
-    e.preventDefault();
+  $(".p2").click(function() {
+    // e.preventDefault();
     alert('hi')
     location.href="https://www.nng.ink/";
     $(".active").removeClass("active");
