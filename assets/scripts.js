@@ -30,8 +30,7 @@ $(document).ready(function(){
         $("div#" + newId).show();
       }
     } else {
-      console.log("e.target.value")
-      console.log("e.target.value")
+      console.log("e.target.value", e.target.value)
 
       $(".active").removeClass("active");
       $(e.target).addClass("active");
