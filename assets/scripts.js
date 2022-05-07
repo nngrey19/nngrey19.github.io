@@ -3,7 +3,7 @@ $(document).ready(function(){
   // Pagination *
   $(".pagination").click(function(e) {
     // console.log(e.target); // The id of the clicked element
-    var currentId = parseInt($(".active").val());
+    var currentId = parseInt($(".active").text());
     console.log("currentId", currentId)
     if(e.target.id === "left"){
       if(currentId > 1) {
