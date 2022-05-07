@@ -1,8 +1,9 @@
 $(document).ready(function(){
   
-  $(".pagination").click(function(e) {
+  $(".pagination").click(function() {
     alert( "Hello" );
-    console.log(e)
+    var clickedBtnID = $(this).attr('id');
+    console.log(clickedBtnID)
   });
 
   $("#new-pic").click(function() {
