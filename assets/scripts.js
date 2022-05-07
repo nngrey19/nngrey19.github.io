@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-  // Pagination
+  // Pagination *
   $(".pagination").click(function(e) {
     console.log(e.target); // The id of the clicked element
     var currentId = parseInt($(".active").attr('id'))
@@ -9,9 +9,9 @@ $(document).ready(function(){
       if(currentId > 1) {
         var newId = currentId - 1
         newId = newId.toString()
-        console.log("newId", newId)
+        console.log("newId", typeof(newId))
         $(".active").removeClass("active");
-        $("#1").addClass("active");
+        $("a#" + newId).addClass("active");
         $(".posts").hide();
         $("div#" + newId).show();
       }
@@ -21,9 +21,9 @@ $(document).ready(function(){
         newId = newId.toString()
         console.log(newId)
         $(".active").removeClass("active");
-        $("#2").addClass("active");
+        $("a#" + newId).addClass("active");
         $(".posts").hide();
-        console.log("newId", newId)
+        console.log("newId", typeof(newId))
         $("div#" + newId).show();
       }
     } else {
