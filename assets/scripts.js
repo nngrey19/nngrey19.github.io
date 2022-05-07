@@ -19,7 +19,6 @@ $(document).ready(function(){
       if (currentId < 2) {
         var newId = currentId + 1
         newId = newId.toString()
-        console.log(newId)
         $(".active").removeClass("active");
         $("a#" + newId).addClass("active");
         $(".posts").hide();
