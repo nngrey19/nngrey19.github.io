@@ -12,19 +12,21 @@ $(document).ready(function(){
         newId = currentId - 1;
         // newId = newId.toString();
         // $(".active").removeClass("active");
-        $("#no" + newId).addClass("active");
         // $(".posts").hide();
         // $("div#" + newId).show();
       }
+      $("#no" + newId).addClass("active");
+
     } else if(e.target.id === "right") {
       if (currentId < 2) {
         newId = currentId + 1;
         // newId = newId.toString()
         // $(".active").removeClass("active");
-        $("#no" + newId).addClass("active");
         // $(".posts").hide();
         // $("div#" + newId).show();
       }
+      $("#no" + newId).addClass("active");
+
     } else {
       // $(".active").removeClass("active");
       $(e.target).addClass("active");
