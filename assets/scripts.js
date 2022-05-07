@@ -7,7 +7,7 @@ $(document).ready(function(){
     console.log("currentId", currentId)
     if(e.target.id === "left"){
       if(currentId > 1) {
-        var newId = currentId -1
+        var newId = currentId - 1
         console.log("newId", newId)
 
         $(".active").removeClass("active");
