@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-  // Pagination *
+  // Pagination
   $(".pagination").click(function(e) {
     // console.log(e.target); // The id of the clicked element
     var currentId = parseInt($(".active").text());
