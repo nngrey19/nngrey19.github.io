@@ -20,16 +20,6 @@ $(document).ready(function(){
     $(".posts").hide();
     $("div#group" + newId).show();
   });
-  
-  $(".p2").click(function() {
-    // e.preventDefault();
-    alert('hi')
-    location.href="https://www.nng.ink/";
-    $(".active").removeClass("active");
-    $(".posts").hide(); 
-    $("#no2").addClass("active");
-    $("div#group2").show();
-  });
 
   // $("#new-pic").click(function() {
   // 
