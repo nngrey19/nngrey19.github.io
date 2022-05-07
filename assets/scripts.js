@@ -30,12 +30,13 @@ $(document).ready(function(){
         $("div#" + newId).show();
       }
     } else {
-      console.log("e.target.value", e.target.value)
+      console.log("e.target.value", e.target)
 
       $(".active").removeClass("active");
       $(e.target).addClass("active");
+      var newId = $(".active").text();
       $(".posts").hide();
-      $("div#" + e.target.value).show();
+      $("div#" + newId).show();
     }
   });
 
