@@ -10,7 +10,7 @@ $(document).ready(function(){
       newId = (currentId > 1) ? currentId - 1 : currentId
       $("#no" + newId).addClass("active");
     } else if(e.target.id === "right") {
-      newId = (currentId < 2) ? currentId +1 : currentId
+      newId = (currentId < 2) ? currentId + 1 : currentId
       $("#no" + newId).addClass("active");
     } else {
       $(e.target).addClass("active");
@@ -19,6 +19,7 @@ $(document).ready(function(){
     
     $(".posts").hide();
     $("div#group" + newId).show();
+    document.location = document.location.href + "?page=" + newId
   });
 
   // $("#new-pic").click(function() {
