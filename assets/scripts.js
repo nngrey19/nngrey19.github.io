@@ -3,12 +3,12 @@ $(document).ready(function(){
   // Pagination
   $(".pagination").click(function(e) {
     // console.log(e.target); // The id of the clicked element
-    var currentId = parseInt($(".active").attr('id'))
+    var currentId = parseInt($(".active").val());
     console.log("currentId", currentId)
     if(e.target.id === "left"){
       if(currentId > 1) {
-        var newId = currentId - 1
-        newId = newId.toString()
+        var newId = currentId - 1;
+        newId = newId.toString();
         console.log("newId", newId)
         console.log("newId", typeof(newId))
         console.log("one")
@@ -19,7 +19,7 @@ $(document).ready(function(){
       }
     } else if(e.target.id === "right") {
       if (currentId < 2) {
-        var newId = currentId + 1
+        var newId = currentId + 1;
         newId = newId.toString()
         // $(".active").removeClass("active");
         $("no" + newId).addClass("active");
