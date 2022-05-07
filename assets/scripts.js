@@ -2,7 +2,7 @@ $(document).ready(function(){
   
   $(".pagination").click(function() {
     alert( "Hello" );
-    console.log(this)
+    console.log($(this))
   });
 
   $("#new-pic").click(function() {
