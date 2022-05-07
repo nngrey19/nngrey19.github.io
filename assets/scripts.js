@@ -11,6 +11,7 @@ $(document).ready(function(){
         newId = newId.toString()
         console.log("newId", newId)
         console.log("newId", typeof(newId))
+        console.log("one")
         // $(".active").removeClass("active");
         $("a#1").addClass("active");
         $(".posts").hide();
@@ -23,6 +24,7 @@ $(document).ready(function(){
         // $(".active").removeClass("active");
         $("a#2").addClass("active");
         $(".posts").hide();
+        console.log("two")
         console.log("newId", newId)
         console.log("newId", typeof(newId))
         $("div#" + newId).show();
