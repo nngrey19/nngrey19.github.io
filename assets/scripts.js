@@ -2,6 +2,7 @@ $(document).ready(function(){
   
   // Pagination
   $(".pagination").click(function(e) {
+    document.location = "https://www.nng.ink"
     var currentId = parseInt($(".active").text());
     var newId;
     $(".active").removeClass("active");
@@ -21,13 +22,12 @@ $(document).ready(function(){
     $("div#group" + newId).show();
   });
   
+  // Load the correct posts on back
+  (function(){
     var urlParams = new URLSearchParams(window.location.search);
     var page = urlParams.get('page');
     $(".active").removeClass("active");
     $(".posts").hide(); 
-    
-    console.log("page", page)
-    // console.log("page===2", page==="2")
 
     if(page==="2") {
       $("#no2").addClass("active");
@@ -36,6 +36,7 @@ $(document).ready(function(){
       $("#no1").addClass("active");
       $("div#group1").show();
     }
+  })();
 
   // $("#new-pic").click(function() {
   // 
