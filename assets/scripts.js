@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-  $(".pagination").click(function() {
+  $("pagination").click(function() {
     alert( "Hello" );
   });
 
