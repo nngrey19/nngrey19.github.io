@@ -3,7 +3,7 @@ $(document).ready(function(){
   // Pagination
   $(".pagination").click(function(e) {
     var currentId = parseInt($(".active").text());
-    var newId;
+    var newId = currentId;
     $(".active").removeClass("active");
     
     if(e.target.id === "left"){
