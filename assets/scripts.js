@@ -1,7 +1,9 @@
 $(document).ready(function(){
   
-  $("pagination").click(function() {
+  $("pagination").click(function(e) {
     alert( "Hello" );
+    console.log(e)
+    // $('#met-image').attr('src', img);
   });
 
   $("#new-pic").click(function() {
