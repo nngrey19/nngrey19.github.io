@@ -19,7 +19,13 @@ $(document).ready(function(){
     
     $(".posts").hide();
     $("div#group" + newId).show();
-    document.location = window.location.origin + "?page=" + newId
+  });
+  
+  $(".p2").click(function() {
+    $(".active").removeClass("active");
+    $(".posts").hide();
+    $("#no2").addClass("active");
+    $("div#group2").show();
   });
 
   // $("#new-pic").click(function() {
