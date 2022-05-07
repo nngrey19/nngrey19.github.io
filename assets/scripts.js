@@ -26,6 +26,7 @@ $(document).ready(function(){
         $("div#" + newId).show();
       }
     } else {
+      console.log("hello")
       $(".active").removeClass("active");
       $(e.target).addClass("active");
       $(".posts").hide();
