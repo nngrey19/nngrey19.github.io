@@ -3,7 +3,7 @@ $(document).ready(function(){
   $(".pagination").click(function(e) {
     console.log(e.target); // The id of the clicked element
     $(".active").removeClass( "active" )
-    e.target.addClass( "active" )
+    $(e.target).addClass( "active" )
   });
 
   $("#new-pic").click(function() {
