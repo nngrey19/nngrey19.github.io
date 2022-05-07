@@ -28,12 +28,12 @@ $(document).ready(function(){
     var page = urlParams.get('page');
       
     if(page==="2") {
-      $(".active").removeClass("active");
+      $("#no1").removeClass("active");
       $(".posts").hide(); 
       $("#no2").addClass("active");
       $("div#group2").show();
     } else if(page==="1") {
-      $(".active").removeClass("active");
+      $("#no2").removeClass("active");
       $(".posts").hide(); 
       $("#no1").addClass("active");
       $("div#group1").show();
