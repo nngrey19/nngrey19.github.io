@@ -8,23 +8,26 @@ $(document).ready(function(){
     if(e.target.id === "left"){
       if(currentId > 1) {
         var newId = currentId - 1
-        console.log("newId", newId)
-
+        newId = newId.toString()
+        console.log(newId)
         $(".active").removeClass("active");
-        $("#" + newId.toString()).addClass("active");
+        $("#" + newId).addClass("active");
         $(".posts").hide();
         $("div#" + newId.toString()).show();
       }
     } else if(e.target.id === "right") {
       if (currentId < 2) {
         var newId = currentId + 1
+        newId = newId.toString()
+        console.log(newId)
         $(".active").removeClass("active");
-        $("#" + newId.toString()).addClass("active");
+        $("#" + newId).addClass("active");
         $(".posts").hide();
         console.log("newId", newId)
         $("div#" + newId.toString()).show();
       }
     } else {
+      $(".active").removeClass("active");
       $(e.target).addClass("active");
       $(".posts").hide();
       $("div#" + e.target.id).show();
