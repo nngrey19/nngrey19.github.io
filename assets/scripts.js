@@ -7,22 +7,22 @@ $(document).ready(function(){
     console.log("currentId", currentId)
     if(e.target.id === "left"){
       if(currentId > 1) {
-        var newId -= currentId.toString()
+        var newId -= currentId
         console.log("newId", newId)
 
         $(".active").removeClass("active");
-        $("#" + newId).addClass("active");
+        $("#" + newId.toString()).addClass("active");
         $(".posts").hide();
-        $("div#" + newId).show();
+        $("div#" + newId.toString()).show();
       }
     } else if(e.target.id === "right") {
       if (currentId < 2) {
-        var newId += currentId.toString()
+        var newId += currentId
         $(".active").removeClass("active");
-        $("#" + newId).addClass("active");
+        $("#" + newId.toString()).addClass("active");
         $(".posts").hide();
         console.log("newId", newId)
-        $("div#" + newId).show();
+        $("div#" + newId.toString()).show();
       }
     } else {
       $(e.target).addClass("active");
