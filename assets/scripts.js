@@ -2,42 +2,38 @@ $(document).ready(function(){
   
   // Pagination
   $(".pagination").click(function(e) {
-    // console.log(e.target); // The id of the clicked element
     var currentId = parseInt($(".active").text());
-    console.log("currentId", currentId)
+    var newId;
+    
     if(e.target.id === "left"){
+      $(".active").removeClass("active");
+
       if(currentId > 1) {
-        var newId = currentId - 1;
-        newId = newId.toString();
-        console.log("newId", newId)
-        console.log("newId", typeof(newId))
-        console.log("one")
-        $(".active").removeClass("active");
+        newId = currentId - 1;
+        // newId = newId.toString();
+        // $(".active").removeClass("active");
         $("#no" + newId).addClass("active");
-        $(".posts").hide();
-        $("div#" + newId).show();
+        // $(".posts").hide();
+        // $("div#" + newId).show();
       }
     } else if(e.target.id === "right") {
       if (currentId < 2) {
-        var newId = currentId + 1;
-        newId = newId.toString()
-        $(".active").removeClass("active");
+        newId = currentId + 1;
+        // newId = newId.toString()
+        // $(".active").removeClass("active");
         $("#no" + newId).addClass("active");
-        $(".posts").hide();
-        console.log("two")
-        console.log("newId", newId)
-        console.log("newId", typeof(newId))
-        $("div#" + newId).show();
+        // $(".posts").hide();
+        // $("div#" + newId).show();
       }
     } else {
-      console.log("e.target.value", e.target)
-
-      $(".active").removeClass("active");
+      // $(".active").removeClass("active");
       $(e.target).addClass("active");
-      var newId = $(".active").text();
-      $(".posts").hide();
-      $("div#" + newId).show();
+      newId = $(".active").text();
+      // $(".posts").hide();
+      // $("div#" + newId).show();
     }
+    $(".posts").hide();
+    $("div#" + newId).show();
   });
 
   // $("#new-pic").click(function() {
