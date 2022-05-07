@@ -22,6 +22,7 @@ $(document).ready(function(){
   });
   
   $(".p2").click(function(e) {
+    alert('hi')
     e.preventDefault();
     location.href="https://www.nng.ink/";
     $(".active").removeClass("active");
