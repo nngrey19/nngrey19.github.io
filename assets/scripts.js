@@ -1,8 +1,8 @@
 $(document).ready(function(){
   
   $(".pagination").click(function(e) {
-    alert(e.target.id); // The id of the clicked element
-    $("a.active").removeClass( "active" )
+    console.log(e.target); // The id of the clicked element
+    $(".active").removeClass( "active" )
     e.target.addClass( "active" )
   });
 
