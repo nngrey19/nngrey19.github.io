@@ -165,7 +165,7 @@ body li {
   font-family: 'Open Sans', sans-serif;
 }
 
-.back {
+a .back {
   color: gray;
   font-size: 14px;
 }
