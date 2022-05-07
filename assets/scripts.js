@@ -5,6 +5,7 @@ $(document).ready(function(){
     $(".active").removeClass("active");
     $(e.target).addClass("active");
     $(".posts").hide();
+    $("div#" + e.target.id).show();
   });
 
   $("#new-pic").click(function() {
