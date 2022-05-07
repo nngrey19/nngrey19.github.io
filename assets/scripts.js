@@ -12,7 +12,7 @@ $(document).ready(function(){
         console.log("newId", newId)
         console.log("newId", typeof(newId))
         console.log("one")
-        // $(".active").removeClass("active");
+        $(".active").removeClass("active");
         $("#no" + newId).addClass("active");
         $(".posts").hide();
         $("div#" + newId).show();
@@ -21,7 +21,7 @@ $(document).ready(function(){
       if (currentId < 2) {
         var newId = currentId + 1;
         newId = newId.toString()
-        // $(".active").removeClass("active");
+        $(".active").removeClass("active");
         $("#no" + newId).addClass("active");
         $(".posts").hide();
         console.log("two")
