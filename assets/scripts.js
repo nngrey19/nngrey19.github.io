@@ -2,8 +2,7 @@ $(document).ready(function(){
   
   $(".pagination").click(function() {
     alert( "Hello" );
-    var clickedBtnID = $(this).attr('id');
-    console.log(clickedBtnID)
+    console.log(this)
   });
 
   $("#new-pic").click(function() {
