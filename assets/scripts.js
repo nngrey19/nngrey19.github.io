@@ -23,12 +23,12 @@ $(document).ready(function(){
   
   $(window).on('load', function() {
     var urlParams = new URLSearchParams(window.location.search);
-    var page = urlParams.get('page'));
+    var page = urlParams.get('page');
     $(".active").removeClass("active");
     $(".posts").hide(); 
     
     console.log("page", page)
-    console.log("page===2", page==="2")
+    // console.log("page===2", page==="2")
 
     if(page==="2") {
       $("#no2").addClass("active");
