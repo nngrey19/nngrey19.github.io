@@ -2,7 +2,7 @@ $(document).ready(function(){
   
   // Pagination *
   $(".pagination").click(function(e) {
-    console.log(e.target); // The id of the clicked element
+    // console.log(e.target); // The id of the clicked element
     var currentId = parseInt($(".active").attr('id'))
     console.log("currentId", currentId)
     if(e.target.id === "left"){
@@ -11,7 +11,7 @@ $(document).ready(function(){
         newId = newId.toString()
         console.log("newId", typeof(newId))
         $(".active").removeClass("active");
-        $("a#" + newId).addClass("active");
+        $("a#" + newId).toggleClass("active");
         $(".posts").hide();
         $("div#" + newId).show();
       }
@@ -20,7 +20,7 @@ $(document).ready(function(){
         var newId = currentId + 1
         newId = newId.toString()
         $(".active").removeClass("active");
-        $("a#" + newId).addClass("active");
+        $("a#" + newId).toggleClass("active");
         $(".posts").hide();
         console.log("newId", typeof(newId))
         $("div#" + newId).show();
