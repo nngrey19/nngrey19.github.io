@@ -21,7 +21,6 @@ $(document).ready(function(){
     $("div#group" + newId).show();
   });
   
-  $(window).on('load', function() {
     var urlParams = new URLSearchParams(window.location.search);
     var page = urlParams.get('page');
     $(".active").removeClass("active");
@@ -37,7 +36,6 @@ $(document).ready(function(){
       $("#no1").addClass("active");
       $("div#group1").show();
     }
-  });
 
   // $("#new-pic").click(function() {
   // 
