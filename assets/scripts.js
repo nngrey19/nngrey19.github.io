@@ -26,7 +26,7 @@ $(document).ready(function(){
   (function(){
     var urlParams = new URLSearchParams(window.location.search);
     var page = urlParams.get('page');
-    
+      
     if(page==="2") {
       $(".active").removeClass("active");
       $(".posts").hide(); 
