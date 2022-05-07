@@ -11,7 +11,7 @@ $(document).ready(function(){
         newId = newId.toString()
         console.log("newId", newId)
         $(".active").removeClass("active");
-        $(newId).addClass("active");
+        $("#" + newId).addClass("active");
         $(".posts").hide();
         $("div#" + newId).show();
       }
@@ -21,7 +21,7 @@ $(document).ready(function(){
         newId = newId.toString()
         console.log(newId)
         $(".active").removeClass("active");
-        $(newId).addClass("active");
+        $("#" + newId).addClass("active");
         $(".posts").hide();
         console.log("newId", newId)
         $("div#" + newId).show();
