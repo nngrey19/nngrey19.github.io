@@ -3,37 +3,20 @@ $(document).ready(function(){
   // Pagination
   $(".pagination").click(function(e) {
     var currentId = parseInt($(".active").text());
-    var newId = currentId;
+    var newId;
     $(".active").removeClass("active");
     
     if(e.target.id === "left"){
-
-      if(currentId > 1) {
-        newId = currentId - 1;
-        // newId = newId.toString();
-        // $(".active").removeClass("active");
-        // $(".posts").hide();
-        // $("div#" + newId).show();
-      }
+      newId = (currentId > 1) ? currentId - 1 : currentId
       $("#no" + newId).addClass("active");
-
     } else if(e.target.id === "right") {
-      if (currentId < 2) {
-        newId = currentId + 1;
-        // newId = newId.toString()
-        // $(".active").removeClass("active");
-        // $(".posts").hide();
-        // $("div#" + newId).show();
-      }
+      newId = (currentId < 2) ? currentId +1 : currentId
       $("#no" + newId).addClass("active");
-
     } else {
-      // $(".active").removeClass("active");
       $(e.target).addClass("active");
       newId = $(".active").text();
-      // $(".posts").hide();
-      // $("div#" + newId).show();
     }
+    
     $(".posts").hide();
     $("div#" + newId).show();
   });
