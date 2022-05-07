@@ -2,6 +2,7 @@ $(document).ready(function(){
   
   $(".pagination").click(function(e) {
     alert(e.target.id); // The id of the clicked element
+    $("a.active").removeClass( "active" )
   });
 
   $("#new-pic").click(function() {
