@@ -353,7 +353,7 @@ hr {
 
 /* Style the active/current link */
 .pagination a.active {
- background-color: gray;
+ background-color: #9f9f9f;
  color: white;
 }
 
