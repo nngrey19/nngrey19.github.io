@@ -7,7 +7,7 @@ $(document).ready(function(){
     console.log("currentId", currentId)
     if(e.target.id === "left"){
       if(currentId > 1) {
-        var newId -= currentId
+        var newId = currentId -1
         console.log("newId", newId)
 
         $(".active").removeClass("active");
@@ -17,7 +17,7 @@ $(document).ready(function(){
       }
     } else if(e.target.id === "right") {
       if (currentId < 2) {
-        var newId += currentId
+        var newId = currentId + 1
         $(".active").removeClass("active");
         $("#" + newId.toString()).addClass("active");
         $(".posts").hide();
