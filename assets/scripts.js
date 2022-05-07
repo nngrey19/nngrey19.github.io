@@ -23,7 +23,7 @@ $(document).ready(function(){
   
   $(".p2").click(function(e) {
     e.preventDefault();
-    window.location.replace("https://www.nng.ink/");
+    // window.location.replace("https://www.nng.ink/");
     $(".active").removeClass("active");
     $(".posts").hide(); 
     $("#no2").addClass("active");
