@@ -4,9 +4,9 @@ $(document).ready(function(){
   $(".pagination").click(function(e) {
     var currentId = parseInt($(".active").text());
     var newId;
+    $(".active").removeClass("active");
     
     if(e.target.id === "left"){
-      $(".active").removeClass("active");
 
       if(currentId > 1) {
         newId = currentId - 1;
