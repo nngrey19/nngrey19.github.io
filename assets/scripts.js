@@ -19,7 +19,7 @@ $(document).ready(function(){
     
     $(".posts").hide();
     $("div#group" + newId).show();
-    document.location = document.location.href + "?page=" + newId
+    document.location = window.location.origin + "?page=" + newId
   });
 
   // $("#new-pic").click(function() {
