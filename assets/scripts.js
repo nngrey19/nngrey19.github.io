@@ -2,7 +2,7 @@ $(document).ready(function(){
   
   // Pagination
   $(".pagination").click(function(e) {
-    document.location = "https://www.nng.ink"
+    window.history.replaceState({}, document.title, "https://www.nng.ink");
     var currentId = parseInt($(".active").text());
     var newId;
     $(".active").removeClass("active");
