@@ -18,7 +18,7 @@ $(document).ready(function(){
     }
     
     $(".posts").hide();
-    $("div#" + newId).show();
+    $("div#group" + newId).show();
   });
 
   // $("#new-pic").click(function() {
