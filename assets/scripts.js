@@ -28,17 +28,17 @@ $(document).ready(function(){
     var page = urlParams.get('page');
       
     if(page === "3") {
-      $("#no1").removeClass("active");
+      $("#no1, #no2").removeClass("active");
       $(".posts").hide(); 
       $("#no3").addClass("active");
       $("div#group3").show();
     } else if(page === "2") {
-      $("#no2").removeClass("active");
+      $("#no1, #no3").removeClass("active");
       $(".posts").hide(); 
-      $("#no1").addClass("active");
-      $("div#group1").show();
+      $("#no2").addClass("active");
+      $("div#group2").show();
     } else if(page === "1") {
-      $("#no2").removeClass("active");
+      $("#no2, #no3").removeClass("active");
       $(".posts").hide(); 
       $("#no1").addClass("active");
       $("div#group1").show();
