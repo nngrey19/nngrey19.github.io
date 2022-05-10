@@ -11,7 +11,7 @@ $(document).ready(function(){
       newId = (currentId > 1) ? currentId - 1 : currentId
       $("#no" + newId).addClass("active");
     } else if(e.target.id === "right") {
-      newId = (currentId < 2) ? currentId + 1 : currentId
+      newId = (currentId < 3) ? currentId + 1 : currentId
       $("#no" + newId).addClass("active");
     } else {
       $(e.target).addClass("active");
@@ -27,11 +27,16 @@ $(document).ready(function(){
     var urlParams = new URLSearchParams(window.location.search);
     var page = urlParams.get('page');
       
-    if(page === "2") {
+    if(page === "3") {
       $("#no1").removeClass("active");
       $(".posts").hide(); 
-      $("#no2").addClass("active");
-      $("div#group2").show();
+      $("#no3").addClass("active");
+      $("div#group3").show();
+    } else if(page === "2") {
+      $("#no2").removeClass("active");
+      $(".posts").hide(); 
+      $("#no1").addClass("active");
+      $("div#group1").show();
     } else if(page === "1") {
       $("#no2").removeClass("active");
       $(".posts").hide(); 
