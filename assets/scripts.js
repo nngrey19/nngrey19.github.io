@@ -14,6 +14,7 @@ $(document).ready(function(){
       $("#no" + newId).addClass("active");
     } else if(e.target.id === "right") {
       newId = (currentId < 3) ? currentId + 1 : currentId
+      console.log("newId", newId)
       $("#no" + newId).addClass("active");
     } else {
       $(e.target).addClass("active");
