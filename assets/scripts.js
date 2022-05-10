@@ -6,9 +6,11 @@ $(document).ready(function(){
     var currentId = parseInt($(".active").text());
     var newId;
     $(".active").removeClass("active");
-    
+    console.log("currentId", currentId)
+
     if(e.target.id === "left"){
       newId = (currentId > 1) ? currentId - 1 : currentId
+      console.log("newId", newId)
       $("#no" + newId).addClass("active");
     } else if(e.target.id === "right") {
       newId = (currentId < 3) ? currentId + 1 : currentId
