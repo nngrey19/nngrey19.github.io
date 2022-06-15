@@ -32,22 +32,22 @@ $(document).ready(function(){
     var page = urlParams.get('page');
     console.log("page", page);
       
-    if(page === "4") {
+    if(page === "1") {
       $("#no1, #no2, #no3").removeClass("active");
       $(".posts").hide(); 
       $("#no4").addClass("active");
       $("div#group4").show();
-    } else if(page === "3") {
+    } else if(page === "2") {
       $("#no1, #no2, #no4").removeClass("active");
       $(".posts").hide(); 
       $("#no3").addClass("active");
       $("div#group3").show();
-    } else if(page === "2") {
+    } else if(page === "3") {
       $("#no1, #no3, #no4").removeClass("active");
       $(".posts").hide(); 
       $("#no2").addClass("active");
       $("div#group2").show();
-    } else if(page === "1") {
+    } else if(page === "4") {
       $("#no2, #no3, #no4").removeClass("active");
       $(".posts").hide(); 
       $("#no1").addClass("active");
