@@ -52,6 +52,12 @@ $(document).ready(function(){
       $(".posts").hide(); 
       $("#no1").addClass("active");
       $("div#group1").show();
+    }  else {
+      // about, todo, timeline
+      $("#no2, #no3, #no4").removeClass("active");
+      $(".posts").hide(); 
+      $("#no1").addClass("active");
+      $("div#group1").show();
     }
   })();
 
