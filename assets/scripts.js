@@ -30,18 +30,23 @@ $(document).ready(function(){
     var urlParams = new URLSearchParams(window.location.search);
     var page = urlParams.get('page');
       
-    if(page === "3") {
-      $("#no1, #no2").removeClass("active");
+    if(page === "4") {
+      $("#no1, #no2, #no3").removeClass("active");
+      $(".posts").hide(); 
+      $("#no4").addClass("active");
+      $("div#4").show();
+    } else if(page === "3") {
+      $("#no1, #no2, #no4").removeClass("active");
       $(".posts").hide(); 
       $("#no3").addClass("active");
       $("div#group3").show();
     } else if(page === "2") {
-      $("#no1, #no3").removeClass("active");
+      $("#no1, #no3, #no4").removeClass("active");
       $(".posts").hide(); 
       $("#no2").addClass("active");
       $("div#group2").show();
     } else if(page === "1") {
-      $("#no2, #no3").removeClass("active");
+      $("#no2, #no3, #no4").removeClass("active");
       $(".posts").hide(); 
       $("#no1").addClass("active");
       $("div#group1").show();
