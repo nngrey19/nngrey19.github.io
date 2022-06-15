@@ -29,6 +29,7 @@ $(document).ready(function(){
   (function(){
     var urlParams = new URLSearchParams(window.location.search);
     var page = urlParams.get('page');
+    console.log("page", page)
       
     if(page === "4") {
       $("#no1, #no2, #no3").removeClass("active");
