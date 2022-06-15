@@ -13,7 +13,7 @@ $(document).ready(function(){
       console.log("newId", newId)
       $("#no" + newId).addClass("active");
     } else if(e.target.id === "right") {
-      newId = (currentId < 3) ? currentId + 1 : currentId
+      newId = (currentId < 4) ? currentId + 1 : currentId
       console.log("newId", newId)
       $("#no" + newId).addClass("active");
     } else {
@@ -34,7 +34,7 @@ $(document).ready(function(){
       $("#no1, #no2, #no3").removeClass("active");
       $(".posts").hide(); 
       $("#no4").addClass("active");
-      $("div#4").show();
+      $("div#group4").show();
     } else if(page === "3") {
       $("#no1, #no2, #no4").removeClass("active");
       $(".posts").hide(); 
