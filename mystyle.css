@@ -262,6 +262,11 @@ figcaption {
   padding: 0;
 }
 
+.list-head {
+  list-style-type: none;
+  margin-bottom: 6px;
+}
+
 .books ul {
   padding-left: 18px;
 }
