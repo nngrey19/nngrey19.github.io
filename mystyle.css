@@ -80,6 +80,10 @@
   padding-bottom: 6px;
 }
 
+.pl0 {
+  padding-left: 0px;
+}
+
 .pl4 {
   padding-left: 4px;
 }
@@ -90,6 +94,10 @@
 
 .books .book-list {
   padding-left: 20px;
+}
+
+.no-bull {
+  list-style: none;
 }
 
 .pt5 {
