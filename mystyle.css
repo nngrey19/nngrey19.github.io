@@ -196,6 +196,8 @@ body {
 
 body li {
   font-family: 'Open Sans', sans-serif;
+  .dashed {
+    padding-bottom: 4px;
 }
 
 .sans {
