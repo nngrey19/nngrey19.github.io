@@ -275,6 +275,10 @@ figcaption {
 
 /* lists */
 
+.dashed ul {
+    list-style-type: '- ';
+}
+
 .main ul {
   list-style-type: none;
   margin-left: 4px;
