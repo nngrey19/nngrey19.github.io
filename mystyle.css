@@ -275,7 +275,7 @@ figcaption {
 
 /* lists */
 
-.dashed ul li {
+.dashed {
     list-style-type: '- ';
 }
 
