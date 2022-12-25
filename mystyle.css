@@ -196,8 +196,6 @@ body {
 
 body li {
   font-family: 'Open Sans', sans-serif;
-  .dashed {
-    padding-bottom: 4px;
 }
 
 .sans {
@@ -280,9 +278,11 @@ figcaption {
 .dashed {
     list-style-type: '- ';
     padding-left: 28px;
-    li {
-      padding-bottom: 4px;
-    }
+
+}
+
+.dashed li {
+    padding-bottom: 4px;
 }
 
 .main ul {
