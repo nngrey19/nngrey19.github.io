@@ -2,7 +2,7 @@ $(document).ready(function(){
   
   // Pagination
   $(".pagination").click(function(e) {
-    window.history.replaceState({}, document.title, "https://www.nng.ink");
+    window.history.replaceState({}, document.title, "https://www.nathangrey.net");
     var currentId = parseInt($(".active").text());
     var newId;
     $(".active").removeClass("active");
