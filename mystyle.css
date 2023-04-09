@@ -414,6 +414,7 @@ hr {
 .dates table {
   width: 250px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .dates table, th, td {
