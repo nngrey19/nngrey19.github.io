@@ -412,6 +412,8 @@ hr {
 .pagination a:hover:not(.active) {background-color: #ddd;} 
 
 .dates table, th, td {
+  width: 250px;
+  text-align: center;
   border: 1px solid black;
   border-collapse: collapse;
 }
