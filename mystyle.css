@@ -410,3 +410,8 @@ hr {
 
 /* Add a grey background color on mouse-over */
 .pagination a:hover:not(.active) {background-color: #ddd;} 
+
+.dates table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
