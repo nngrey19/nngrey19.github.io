@@ -415,3 +415,6 @@ hr {
   border: 1px solid black;
   border-collapse: collapse;
 }
+.dates td {
+  width:14%
+}
