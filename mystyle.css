@@ -415,6 +415,12 @@ hr {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
 .dates td {
-  width:14%
+  width:14%;
+}
+
+.dates table {
+  width: 250px;
+  text-align: center;
 }
