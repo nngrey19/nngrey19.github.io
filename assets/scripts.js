@@ -67,6 +67,13 @@ $(document).ready(function(){
         collapsible: true
     });
   });
+
+  $(function() {
+    $( "#accordion2" ).accordion({
+        active: false,
+        collapsible: true
+    });
+  });
   // $("#new-pic").click(function() {
   // 
   //   $.get("https://collectionapi.metmuseum.org/public/collection/v1/search?isHighlight=true&hasImages=true&departmentIds=3|5|6|7|9|10|11|12|13|14|17|21q=*", function( data ) {
