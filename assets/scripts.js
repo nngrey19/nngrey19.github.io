@@ -105,14 +105,14 @@ document.addEventListener("DOMContentLoaded", function () {
           const eventContainer = document.getElementById(`${month}-${dayNum}`);
 
           if (activeDay === this) {
-              // If the same day is clicked, hide its events
-              eventContainer.style.display = "none";
+              // If the same day is clicked, hide its events smoothly
+              eventContainer.classList.remove("show");
               this.classList.remove("active");
               activeDay = null;
           } else {
-              // Hide all event containers
+              // Hide all event containers smoothly
               document.querySelectorAll(".event-container").forEach(event => {
-                  event.style.display = "none";
+                  event.classList.remove("show");
               });
 
               // Remove active class from all days
@@ -120,8 +120,8 @@ document.addEventListener("DOMContentLoaded", function () {
                   d.classList.remove("active");
               });
 
-              // Show the selected day's events
-              eventContainer.style.display = "block";
+              // Show the selected day's events with slide effect
+              eventContainer.classList.add("show");
               this.classList.add("active");
               activeDay = this;
           }
