@@ -472,6 +472,6 @@ hr {
           padding: 0 15px;
       }
       .event-container.show {
-          max-height: 200px; /* Adjust as needed */
+          max-height: fit-content; /* Adjust as needed */
           padding: 10px 15px;
       }
