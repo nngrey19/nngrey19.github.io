@@ -62,27 +62,25 @@ $(document).ready(function(){
   })();
 }); 
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
   const months = ["1-january", "2-february"]; // Add all month files in order
   const container = document.getElementById("months-container");
 
-  // Load months in order
-  let loadMonthPromises = months.map((month) => {
-    return fetch(`months/${month}.html`)
-      .then(response => response.text())
-      .then(data => {
-        container.innerHTML += data; // Append to container
-      })
-      .catch(error => console.error(`Error loading ${month}:`, error));
-  });
+  // Sequentially load and append months
+  for (const month of months) {
+    try {
+      const response = await fetch(`months/${month}.html`);
+      const data = await response.text();
+      container.innerHTML += data; // Append to container
+    } catch (error) {
+      console.error(`Error loading ${month}:`, error);
+    }
+  }
 
-  // Wait for all months to load before attaching event listeners
-  Promise.all(loadMonthPromises)
-    .then(() => {
-      // Once all months are loaded, attach event listeners
-      attachDayEventListeners();
-    });
+  // Once all months are loaded, attach event listeners
+  attachDayEventListeners();
 });
+
 
 // Function to attach event listeners after content loads
 function attachDayEventListeners() {
