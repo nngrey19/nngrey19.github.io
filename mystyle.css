@@ -487,7 +487,7 @@ body {
   position: absolute;
   bottom: 100%;
   left: 20%;
-  z-index: 1;
+  z-index: 100;
   background: #fff;
   /* border: 1px solid #ccc; */
   padding: 8px;
