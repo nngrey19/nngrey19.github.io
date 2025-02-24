@@ -128,3 +128,17 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const months = ["january", "february"]; // Add all month names here
+  const container = document.getElementById("months-container");
+
+  months.forEach(month => {
+      fetch(`months/${month}.html`) // Load the month file
+          .then(response => response.text()) // Get the HTML content
+          .then(data => {
+              container.innerHTML += data; // Append to the container
+          })
+          .catch(error => console.error(`Error loading ${month}:`, error));
+  });
+});

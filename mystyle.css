@@ -434,7 +434,7 @@ hr {
       }
       .month {
           cursor: pointer;
-          color: #007BFF;
+          /* color: #007BFF; */
           font-size: 1.5em;
           margin-right: 15px;
           white-space: nowrap;
