@@ -486,11 +486,11 @@ body {
   display: none;  /* Hide the thumbnail by default */
   position: absolute;
   bottom: 100%;
-  left: 0;
+  left: 20%;
   z-index: 1;
   background: #fff;
   /* border: 1px solid #ccc; */
-  padding: 5px;
+  padding: 8px;
 }
 
 .image-link:hover .thumbnail {
