@@ -424,54 +424,81 @@ hr {
 /* Add a grey background color on mouse-over */
 .pagination a:hover:not(.active) {background-color: #ddd;} 
 
-        /* Basic styling */
-        body {
-          font-family: Arial, sans-serif;
-      }
-      .month-container {
-          display: flex;
-          align-items: center;
-          margin: 10px 0;
-      }
-      .month {
-          cursor: pointer;
-          /* color: #007BFF; */
-          font-size: 1.5em;
-          margin-right: 15px;
-          white-space: nowrap;
-          margin-top: 0px;
-          margin-bottom: 0px;
-      }
-      .days {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-      }
-      .day {
-          cursor: pointer;
-          color: #333;
-          font-size: 1em;
-          padding: 5px;
-          border-radius: 5px;
-          background: #f0f0f0;
-          transition: background 0.2s;
-      }
-      .day:hover {
-          background: #ddd;
-      }
-      .day.active {
-          background: #007BFF;
-          color: #fff;
-      }
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
 
-      /* Smooth slide-down effect */
-      .event-container {
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
-          padding: 0 15px;
-      }
-      .event-container.show {
-          max-height: fit-content; /* Adjust as needed */
-          padding: 10px 15px;
-      }
+.month-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.month {
+    cursor: pointer;
+    /* color: #007BFF; */
+    font-size: 1.5em;
+    margin-right: 15px;
+    white-space: nowrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.day {
+    cursor: pointer;
+    color: #333;
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    background: #f0f0f0;
+    transition: background 0.2s;
+}
+.day:hover {
+    background: #ddd;
+}
+.day.active {
+    background: #007BFF;
+    color: #fff;
+}
+
+/* Smooth slide-down effect */
+.event-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0 15px;
+}
+.event-container.show {
+    max-height: fit-content; /* Adjust as needed */
+    padding: 10px 15px;
+}
+
+.image-link {
+  position: relative;
+  display: inline-block;
+}
+
+.thumbnail {
+  display: none;  /* Hide the thumbnail by default */
+  position: absolute;
+  top: 100%;  /* Position it below the link */
+  left: 0;
+  z-index: 1;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.image-link:hover .thumbnail {
+  display: block;  /* Show the thumbnail when the link is hovered */
+}
+
+.thumbnail img {
+  width: 100px;  /* Thumbnail size */
+  height: auto;
+}
+      
