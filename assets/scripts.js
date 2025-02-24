@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const months = ["january", "february"]; // Add all month names here
+  const months = ["1-january", "2-february"]; // Add all month names here
   const container = document.getElementById("months-container");
 
   months.forEach(month => {
