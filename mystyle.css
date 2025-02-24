@@ -433,3 +433,22 @@ hr {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
+.month {
+  cursor: pointer;
+  color: #007BFF;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.month:hover {
+  text-decoration: underline;
+}
+.days-container {
+  display: none; /* Initially hidden */
+  margin-left: 20px;
+}
+.day {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 10px;
+}
