@@ -60,57 +60,47 @@ $(document).ready(function(){
       $("div#group1").show();
     }
   })();
-
-  $(function() {
-    $( "#accordion" ).accordion({
-        active: false,
-        collapsible: true
-    });
-  });
-
-  $(function() {
-    $( "#accordion2" ).accordion({
-        active: false,
-        collapsible: true
-    });
-  });
-  // $("#new-pic").click(function() {
-  // 
-  //   $.get("https://collectionapi.metmuseum.org/public/collection/v1/search?isHighlight=true&hasImages=true&departmentIds=3|5|6|7|9|10|11|12|13|14|17|21q=*", function( data ) {
-  //     var ids = data["objectIDs"];
-  //     var id = ids[Math.floor(Math.random() * ids.length)];
-  // 
-  //     $.get( `https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`, function( data ) {
-  //       var img = data["primaryImageSmall"];
-  //       var url = data["objectURL"];
-  // 
-  //       $('#met-image').attr('src', img);
-  //       $('#title').text(data["title"]);
-  //       $('#artist').text(data["artistDisplayName"]);
-  //       $('#date').text(data["objectDate"]);
-  //       $('#met-link').attr('href', url);
-  //     });
-  //   });
-  // });
 }); 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const days = document.querySelectorAll(".day");
-  let activeDay = null; // Track active day
+  const months = ["1-january", "2-february"]; // Add all month files
+  const container = document.getElementById("months-container");
 
-  days.forEach(day => {
-      day.addEventListener("click", function () {
-          const month = this.getAttribute("data-month");
-          const dayNum = this.getAttribute("data-day");
+  // Load all months dynamically
+  Promise.all(
+      months.map(month => 
+          fetch(`months/${month}.html`)
+              .then(response => response.text())
+              .then(data => {
+                  container.innerHTML += data; // Append to container
+              })
+              .catch(error => console.error(`Error loading ${month}:`, error))
+      )
+  ).then(() => {
+      // Once all months are loaded, attach event listeners
+      attachDayEventListeners();
+  });
+});
+
+// Function to attach event listeners after content loads
+function attachDayEventListeners() {
+  const container = document.getElementById("months-container");
+
+  container.addEventListener("click", function (event) {
+      if (event.target.classList.contains("day")) {
+          const day = event.target;
+          const month = day.getAttribute("data-month");
+          const dayNum = day.getAttribute("data-day");
           const eventContainer = document.getElementById(`${month}-${dayNum}`);
 
-          if (activeDay === this) {
-              // If the same day is clicked, hide its events smoothly
+          if (!eventContainer) return; // Avoid errors if event container is missing
+
+          if (day.classList.contains("active")) {
+              // If the same day is clicked, hide events smoothly
               eventContainer.classList.remove("show");
-              this.classList.remove("active");
-              activeDay = null;
+              day.classList.remove("active");
           } else {
-              // Hide all event containers smoothly
+              // Hide all other event containers
               document.querySelectorAll(".event-container").forEach(event => {
                   event.classList.remove("show");
               });
@@ -120,25 +110,10 @@ document.addEventListener("DOMContentLoaded", function () {
                   d.classList.remove("active");
               });
 
-              // Show the selected day's events with slide effect
+              // Show the selected day's events smoothly
               eventContainer.classList.add("show");
-              this.classList.add("active");
-              activeDay = this;
+              day.classList.add("active");
           }
-      });
+      }
   });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const months = ["1-january", "2-february"]; // Add all month names here
-  const container = document.getElementById("months-container");
-
-  months.forEach(month => {
-      fetch(`months/${month}.html`) // Load the month file
-          .then(response => response.text()) // Get the HTML content
-          .then(data => {
-              container.innerHTML += data; // Append to the container
-          })
-          .catch(error => console.error(`Error loading ${month}:`, error));
-  });
-});
+}
