@@ -95,19 +95,22 @@ $(document).ready(function(){
 }); 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const months = document.querySelectorAll(".month");
+  const days = document.querySelectorAll(".day");
 
-  months.forEach(month => {
-      month.addEventListener("click", function () {
-          // Hide all days-containers
-          document.querySelectorAll(".days-container").forEach(container => {
-              container.style.display = "none";
+  days.forEach(day => {
+      day.addEventListener("click", function () {
+          // Hide all event containers
+          document.querySelectorAll(".event-container").forEach(event => {
+              event.style.display = "none";
           });
 
-          // Show the clicked month's days
-          let nextElement = this.nextElementSibling;
-          if (nextElement && nextElement.classList.contains("days-container")) {
-              nextElement.style.display = "block";
+          // Show the selected day's events
+          const month = this.getAttribute("data-month");
+          const day = this.getAttribute("data-day");
+          const eventContainer = document.getElementById(`${month}-${day}`);
+
+          if (eventContainer) {
+              eventContainer.style.display = "block";
           }
       });
   });

@@ -423,32 +423,39 @@ hr {
 /* Add a grey background color on mouse-over */
 .pagination a:hover:not(.active) {background-color: #ddd;} 
 
-.dates table {
-  width: 250px;
-  text-align: center;
-  margin-top: 20px;
+body {
+  font-family: Arial, sans-serif;
 }
-
-.dates table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+.month-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
 }
-
 .month {
   cursor: pointer;
   color: #007BFF;
   font-size: 1.5em;
-  margin: 10px 0;
+  margin-right: 15px;
+  white-space: nowrap;
 }
-.month:hover {
-  text-decoration: underline;
-}
-.days-container {
-  display: none; /* Initially hidden */
-  margin-left: 20px;
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 .day {
-  font-size: 1.2em;
+  cursor: pointer;
   color: #333;
+  font-size: 1em;
+  padding: 5px;
+  border-radius: 5px;
+  background: #f0f0f0;
+  transition: background 0.2s;
+}
+.day:hover {
+  background: #ddd;
+}
+.event-container {
+  display: none;
   margin-top: 10px;
 }
