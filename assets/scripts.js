@@ -93,3 +93,22 @@ $(document).ready(function(){
   //   });
   // });
 }); 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const months = document.querySelectorAll(".month");
+
+  months.forEach(month => {
+      month.addEventListener("click", function () {
+          // Hide all days-containers
+          document.querySelectorAll(".days-container").forEach(container => {
+              container.style.display = "none";
+          });
+
+          // Show the clicked month's days
+          let nextElement = this.nextElementSibling;
+          if (nextElement && nextElement.classList.contains("days-container")) {
+              nextElement.style.display = "block";
+          }
+      });
+  });
+});
