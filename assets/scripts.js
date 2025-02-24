@@ -96,21 +96,34 @@ $(document).ready(function(){
 
 document.addEventListener("DOMContentLoaded", function () {
   const days = document.querySelectorAll(".day");
+  let activeDay = null; // Track active day
 
   days.forEach(day => {
       day.addEventListener("click", function () {
-          // Hide all event containers
-          document.querySelectorAll(".event-container").forEach(event => {
-              event.style.display = "none";
-          });
-
-          // Show the selected day's events
           const month = this.getAttribute("data-month");
-          const day = this.getAttribute("data-day");
-          const eventContainer = document.getElementById(`${month}-${day}`);
+          const dayNum = this.getAttribute("data-day");
+          const eventContainer = document.getElementById(`${month}-${dayNum}`);
 
-          if (eventContainer) {
+          if (activeDay === this) {
+              // If the same day is clicked, hide its events
+              eventContainer.style.display = "none";
+              this.classList.remove("active");
+              activeDay = null;
+          } else {
+              // Hide all event containers
+              document.querySelectorAll(".event-container").forEach(event => {
+                  event.style.display = "none";
+              });
+
+              // Remove active class from all days
+              document.querySelectorAll(".day").forEach(d => {
+                  d.classList.remove("active");
+              });
+
+              // Show the selected day's events
               eventContainer.style.display = "block";
+              this.classList.add("active");
+              activeDay = this;
           }
       });
   });
