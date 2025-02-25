@@ -447,6 +447,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    z-index: 1;
 }
 .day {
     cursor: pointer;
@@ -467,6 +468,7 @@ body {
 
 /* Smooth slide-down effect */
 .event-container {
+    position: relative; /* Ensure absolute positioning works inside */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
@@ -487,7 +489,7 @@ body {
   position: absolute;
   bottom: 100%;
   left: 20%;
-  z-index: 100;
+  z-index: 9999;
   background: #fff;
   /* border: 1px solid #ccc; */
   padding: 8px;
