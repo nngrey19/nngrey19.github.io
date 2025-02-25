@@ -470,7 +470,7 @@ body {
 .event-container {
     position: relative; /* Ensure absolute positioning works inside */
     max-height: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
     padding: 0 15px;
 }
@@ -489,7 +489,7 @@ body {
   position: absolute;
   bottom: 100%;
   left: 20%;
-  z-index: 9999;
+  z-index: 1000;
   background: #fff;
   /* border: 1px solid #ccc; */
   padding: 8px;
