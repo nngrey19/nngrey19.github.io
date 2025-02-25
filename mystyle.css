@@ -488,7 +488,7 @@ body {
 .thumbnail {
   display: none;  /* Hide the thumbnail by default */
   position: absolute;
-  top: -600;
+  top: -600%;
   left: 100%;
   z-index: 1000;
   background: #fff;
