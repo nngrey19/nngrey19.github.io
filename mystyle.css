@@ -466,17 +466,12 @@ body {
 }
 
 /* Smooth slide-down effect */
-/* .event-container {
+.event-container {
     max-height: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
     padding: 0 15px;
-} */
-.event-container {
-  position: relative; /* Ensure stacking context */
-  overflow: visible;  /* Allow elements to extend beyond this container */
 }
-
 .event-container.show {
     max-height: fit-content; /* Adjust as needed */
     padding: 10px 15px;
@@ -484,22 +479,19 @@ body {
 
 .image-link {
   position: relative;
-  z-index: 10;
+  display: inline-block;
 }
 
 .thumbnail {
-  display: none;
+  display: none;  /* Hide the thumbnail by default */
   position: absolute;
-  top: -160%; /* Adjust to ensure it appears above the text */
-  left: 50%; /* Center it horizontally */
-  transform: translateX(-50%); /* Ensure centering */
-  z-index: 1000; /* Make sure it's above everything */
+  bottom: 100%;
+  left: 20%;
+  z-index: 1000;
   background: #fff;
+  /* border: 1px solid #ccc; */
   padding: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for visibility */
 }
-
-
 
 .image-link:hover .thumbnail {
   display: block;  /* Show the thumbnail when the link is hovered */
