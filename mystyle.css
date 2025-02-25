@@ -477,6 +477,7 @@ body {
 .event-container.show {
     max-height: fit-content; /* Adjust as needed */
     padding: 10px 15px;
+    overflow: visible;
 }
 
 .image-link {
@@ -487,8 +488,8 @@ body {
 .thumbnail {
   display: none;  /* Hide the thumbnail by default */
   position: absolute;
-  bottom: 100%;
-  left: 20%;
+  top: 0;
+  left: 100%;
   z-index: 1000;
   background: #fff;
   /* border: 1px solid #ccc; */
