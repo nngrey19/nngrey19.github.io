@@ -297,11 +297,13 @@ figcaption {
 }
 
 .main ul {
-  /* list-style-type: none; */
-  /* margin-left: 4px;
-  margin-top: 10px;
-  padding: 0; */
-  /* padding-right: 16em; */
+  padding-right: 20%; /* Default for larger screens */
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .main ul {
+    padding-right: 10%;
+  }
 }
 
 .list-head {
