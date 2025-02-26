@@ -66,12 +66,27 @@ document.addEventListener("DOMContentLoaded", async function () {
   const months = ["1-january", "2-february"]; // Add all month files in order
   const container = document.getElementById("months-container");
 
+  // Get today's date
+  const today = new Date();
+  const monthNames = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+  const currentMonth = monthNames[today.getMonth()];
+  const currentDay = today.getDate();
+
+  let todayEventContainer = null;
+  let todayDayElement = null;
+
   // Sequentially load and append months
   for (const month of months) {
     try {
       const response = await fetch(`months/${month}.html`);
       const data = await response.text();
       container.innerHTML += data; // Append to container
+
+      // Check if today's event exists
+      if (month.includes(currentMonth)) {
+        todayEventContainer = document.getElementById(`${currentMonth}-${currentDay}`);
+        todayDayElement = document.querySelector(`.day[data-month="${currentMonth}"][data-day="${currentDay}"]`);
+      }
     } catch (error) {
       console.error(`Error loading ${month}:`, error);
     }
@@ -79,8 +94,13 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   // Once all months are loaded, attach event listeners
   attachDayEventListeners();
-});
 
+  // Open today's events by default
+  if (todayEventContainer && todayDayElement) {
+    todayEventContainer.classList.add("show");
+    todayDayElement.classList.add("active");
+  }
+});
 
 // Function to attach event listeners after content loads
 function attachDayEventListeners() {
@@ -117,3 +137,4 @@ function attachDayEventListeners() {
       }
   });
 }
+
