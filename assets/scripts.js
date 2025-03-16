@@ -63,7 +63,7 @@ $(document).ready(function(){
 }); 
 
 document.addEventListener("DOMContentLoaded", async function () {
-  const months = ["1-january", "2-february, 3-march"]; // Add all month files in order
+  const months = ["1-january", "2-february", "3-march"]; // Add all month files in order
   const container = document.getElementById("months-container");
 
   // Get today's date
